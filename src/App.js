@@ -7,6 +7,7 @@ import Day from './visualizations/Day';
 import Categories from './visualizations/Categories';
 
 import expensesData from './data/expenses.json';
+import locale from './data/pt-BR.json';
 
 var width = 750;
 var height = 1800;
@@ -23,9 +24,9 @@ class App extends Component {
     this.state = {
       expenses: [],
       categories: [
-        {name: 'Restaurants', expenses: [], total: 0},
-        {name: 'Travel', expenses: [], total: 0},
-        {name: 'Dessert', expenses: [], total: 0},
+        {name: 'Alimentação', expenses: [], total: 0},
+        {name: 'Transporte', expenses: [], total: 0},
+        {name: 'Lazer', expenses: [], total: 0},
       ],
       categoryBeingAdded: null,
       selectedWeek: null,
@@ -43,14 +44,18 @@ class App extends Component {
 
   componentWillMount() {
     // process data
+    var timeFormat = d3.timeFormat('%d/%m/%y');
     var expenses = _.chain(expensesData)
       .filter(d => d.Amount < 0)
       .map((d, i) => {
         return {
           id: i,
           amount: -d.Amount,
-          name: d.Description,
+          name: `${d.Description} (${-d.Amount}) ${timeFormat(new Date(d['Trans Date']))}`,
           date: new Date(d['Trans Date']),
+          // amount: -d.Valor,
+          // name: d['Histórico'],
+          // date: new Date(d.Data),
           categories: 0,
         }
       }).value();
@@ -133,7 +138,8 @@ class App extends Component {
   }
 
   render() {
-    var selectedWeek = d3.timeFormat('%B %d, %Y')(this.state.selectedWeek);
+    d3.timeFormatDefaultLocale(locale);
+    var selectedWeek = d3.timeFormat('%d de %B, %Y')(this.state.selectedWeek);
     var style = {
       width,
       margin: 'auto',
@@ -170,10 +176,10 @@ class App extends Component {
       <div className='App' style={style}>
         <h1 style={{textAlign: 'center', color: colors.black}}>
           <span style={{cursor: 'pointer'}} onClick={this.prevWeek}>← </span>
-          Week of {selectedWeek}
+          Semana de {selectedWeek}
           <span style={{cursor: 'pointer'}}  onClick={this.nextWeek}> →</span>
         </h1>
-        <input id='addCategory' style={inputStyle} type='text' placeholder='Add Category'
+        <input id='addCategory' style={inputStyle} type='text' placeholder='Adicionar Categoria'
           onFocus={this.startCategory} onBlur={this.clearCategory} onKeyDown={this.addCategory}></input>
         <svg style={svgStyle}>
           <Day {...props} {...this.state} />

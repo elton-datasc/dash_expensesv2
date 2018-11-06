@@ -136,7 +136,8 @@ class App extends Component {
     // enter+update
     this.circles = this.circles.enter().append('circle')
       .classed('expense', true)
-      .attr('fill', this.props.colors.white)
+      //.attr('fill', this.props.colors.white)
+      .attr('fill', this.props.colors.black)
       .style('cursor', 'move')
       .call(drag)
       .on('mouseover', this.mouseOver)

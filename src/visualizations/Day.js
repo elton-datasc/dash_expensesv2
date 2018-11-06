@@ -144,7 +144,7 @@ class Day extends Component {
       .transition(t)
       .attr('fill', d => d.fill);
 
-    var timeFormat = d3.timeFormat('%m/%d');
+    var timeFormat = d3.timeFormat('%d/%m/%y');
     days.select('text')
       .attr('y', d => dayHeight - 0.75 * fontSize)
       .text(d => timeFormat(d.date));
