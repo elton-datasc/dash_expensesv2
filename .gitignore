@@ -8,6 +8,7 @@
 
 # testing
 /coverage
+processamento/programa/test_page.html
 
 # production
 /build
