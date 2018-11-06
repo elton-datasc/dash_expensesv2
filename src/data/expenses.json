@@ -1,359 +1,402 @@
 [
   {
-    "Type": "Sale",
-    "Trans Date": "06/15/2017",
-    "Post Date": "06/15/2017",
-    "Description": "SFMTA MOSCONE GARAGE",
-    "Amount": -2
+    "Trans Date": "09/25/2018",
+    "Description": "DEBITOS PAGOS EM USS NO PERIODO",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "",
+    "Fonte": "cartao",
+    "Amount": 71.618916,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/15/2017",
-    "Post Date": "06/18/2017",
-    "Description": "SOCIAL POLICY",
-    "Amount": -13
+    "Trans Date": "09/25/2018",
+    "Description": "DEBITOS NO EXTERIOR CONVERT P/ R$",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "",
+    "Fonte": "cartao",
+    "Amount": -71.618916,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/15/2017",
-    "Post Date": "06/18/2017",
-    "Description": "BLOCK 2 PARKING LOT",
-    "Amount": -10
+    "Trans Date": "09/10/2018",
+    "Description": "PGTO DEBITO CONTA 1617 000005071  200211",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "",
+    "Fonte": "cartao",
+    "Amount": 3493.13,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/14/2017",
-    "Post Date": "06/16/2017",
-    "Description": "THE SANDWICH SHOP",
-    "Amount": -10.47
+    "Trans Date": "09/21/2018",
+    "Description": "PROMO VISA SEM FRONTEIRSAO PAULO",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "BR",
+    "Fonte": "cartao",
+    "Amount": 3.134401,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/13/2017",
-    "Post Date": "06/14/2017",
-    "Description": "SQ *TIGER TEA &amp; JUICE",
-    "Amount": -3.53
+    "Trans Date": "09/22/2018",
+    "Description": "PAGAMENTO ANTECIPADO",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "BR",
+    "Fonte": "cartao",
+    "Amount": 71.618916,
+    "": ""
   },
   {
-    "Type": "Payment",
-    "Trans Date": "06/12/2017",
-    "Post Date": "06/12/2017",
-    "Description": "Payment Thank You - Web",
-    "Amount": 1122.14
+    "Trans Date": "09/22/2018",
+    "Description": "1592 JOHNSTON STREET",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "BC",
+    "Fonte": "cartao",
+    "Amount": -67.325216,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/11/2017",
-    "Post Date": "06/12/2017",
-    "Description": "JAPAN CENTER GARAGE",
-    "Amount": -8.5
+    "Trans Date": "09/22/2018",
+    "Description": "RETIRADA-EXTERIOR",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "BR",
+    "Fonte": "cartao",
+    "Amount": -12,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/11/2017",
-    "Post Date": "06/12/2017",
-    "Description": "SQ *BOBA GUYS FILLMORE",
-    "Amount": -15.5
+    "Trans Date": "09/17/2018",
+    "Description": "LAGUARDIAAUBONPAIN722A NEW YORK",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "NY",
+    "Fonte": "cartao",
+    "Amount": -31.472821000000003,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/11/2017",
-    "Post Date": "06/13/2017",
-    "Description": "ON THE BRIDGE",
-    "Amount": -17.4
+    "Trans Date": "09/19/2018",
+    "Description": "IOF - COMPRA NO EXTERIOR",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "",
+    "Fonte": "cartao",
+    "Amount": -2.018039,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/11/2017",
-    "Post Date": "06/12/2017",
-    "Description": "SQ *CHATO",
-    "Amount": -13.29
+    "Trans Date": "09/19/2018",
+    "Description": "BEAVER",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "BC",
+    "Fonte": "cartao",
+    "Amount": -22.713673,
+    "": ""
   },
   {
-    "Type": "Return",
-    "Trans Date": "06/11/2017",
-    "Post Date": "06/12/2017",
-    "Description": "SQ *BOBA GUYS FILLMORE",
-    "Amount": 4
+    "Trans Date": "09/21/2018",
+    "Description": "IOF - COMPRA NO EXTERIOR",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "",
+    "Fonte": "cartao",
+    "Amount": -1.459858,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/10/2017",
-    "Post Date": "06/11/2017",
-    "Description": "CCSF MTA IPS PRKNG METER",
-    "Amount": -0.72
+    "Trans Date": "09/07/2018",
+    "Description": "RECVIVO*83981821478",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "BR",
+    "Fonte": "cartao",
+    "Amount": -15,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/10/2017",
-    "Post Date": "06/12/2017",
-    "Description": "PICCINO",
-    "Amount": -34.69
+    "Trans Date": "09/13/2018",
+    "Description": "MACYS",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "NY",
+    "Fonte": "cartao",
+    "Amount": -420.739663,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/10/2017",
-    "Post Date": "06/11/2017",
-    "Description": "SQ *AQUA CLUB",
-    "Amount": -14.03
+    "Trans Date": "09/14/2018",
+    "Description": "IOF - COMPRA NO EXTERIOR",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "",
+    "Fonte": "cartao",
+    "Amount": -26.835625,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/09/2017",
-    "Post Date": "06/12/2017",
-    "Description": "PICCINO",
-    "Amount": -58.7
+    "Trans Date": "09/13/2018",
+    "Description": "MACYS",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "NY",
+    "Fonte": "cartao",
+    "Amount": -685.789764,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/09/2017",
-    "Post Date": "06/11/2017",
-    "Description": "SFMTA MOSCONE GARAGE",
-    "Amount": -3
+    "Trans Date": "09/14/2018",
+    "Description": "IOF - COMPRA NO EXTERIOR",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "",
+    "Fonte": "cartao",
+    "Amount": -43.752803,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/09/2017",
-    "Post Date": "06/11/2017",
-    "Description": "SFMTA MOSCONE GARAGE",
-    "Amount": -6
+    "Trans Date": "09/21/2018",
+    "Description": "NETFLIX.COM",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "BR",
+    "Fonte": "cartao",
+    "Amount": -27.9,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/08/2017",
-    "Post Date": "06/08/2017",
-    "Description": "SFMTA MOSCONE GARAGE",
-    "Amount": -6
+    "Trans Date": "09/02/2018",
+    "Description": "Uber Do Brasil TecnologSAO PAULO",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "BR",
+    "Fonte": "cartao",
+    "Amount": -23.38,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/08/2017",
-    "Post Date": "06/09/2017",
-    "Description": "SQ *TIGER TEA &amp; JUICE",
-    "Amount": -4.62
+    "Trans Date": "09/02/2018",
+    "Description": "Uber Do Brasil TecnologSAO PAULO",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "BR",
+    "Fonte": "cartao",
+    "Amount": -24.05,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/08/2017",
-    "Post Date": "06/09/2017",
-    "Description": "SQ *TIGER TEA &amp; JUICE",
-    "Amount": -4.3
+    "Trans Date": "09/07/2018",
+    "Description": "Uber Do Brasil TecnologSAO PAULO",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "BR",
+    "Fonte": "cartao",
+    "Amount": -45.64,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/07/2017",
-    "Post Date": "06/08/2017",
-    "Description": "THE SANDWICH SHOP",
-    "Amount": -10.47
+    "Trans Date": "09/07/2018",
+    "Description": "Uber Do Brasil TecnologSAO PAULO",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "BR",
+    "Fonte": "cartao",
+    "Amount": -28.61,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/07/2017",
-    "Post Date": "06/08/2017",
-    "Description": "SQ *BOBA GUYS POTRERO",
-    "Amount": -15.45
+    "Trans Date": "09/07/2018",
+    "Description": "Uber Do Brasil TecnologSAO PAULO",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "BR",
+    "Fonte": "cartao",
+    "Amount": -30.1,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/06/2017",
-    "Post Date": "06/06/2017",
-    "Description": "SFMTA MOSCONE GARAGE",
-    "Amount": -8
+    "Trans Date": "09/11/2018",
+    "Description": "Uber Do Brasil TecnologSAO PAULO",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "BR",
+    "Fonte": "cartao",
+    "Amount": -4,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/05/2017",
-    "Post Date": "06/06/2017",
-    "Description": "SQ *ASHA TEA HOUSE (SF)",
-    "Amount": -8
+    "Trans Date": "09/11/2018",
+    "Description": "Uber Do Brasil TecnologSAO PAULO",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "BR",
+    "Fonte": "cartao",
+    "Amount": -4,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/05/2017",
-    "Post Date": "06/07/2017",
-    "Description": "DELTA AIR   0062385896060",
-    "Amount": -130.2
+    "Trans Date": "09/16/2018",
+    "Description": "UBER",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "CA",
+    "Fonte": "cartao",
+    "Amount": -22.456051000000002,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/05/2017",
-    "Post Date": "06/07/2017",
-    "Description": "DELTA AIR   0062385896059",
-    "Amount": -130.2
+    "Trans Date": "09/17/2018",
+    "Description": "IOF - COMPRA NO EXTERIOR",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "",
+    "Fonte": "cartao",
+    "Amount": -1.416921,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/04/2017",
-    "Post Date": "06/06/2017",
-    "Description": "IKEA EAST PALO ALTO",
-    "Amount": -2.74
+    "Trans Date": "09/16/2018",
+    "Description": "ALDO US #2905",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "NJ",
+    "Fonte": "cartao",
+    "Amount": -470.374835,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/04/2017",
-    "Post Date": "06/05/2017",
-    "Description": "THE REFUGE",
-    "Amount": -22.58
+    "Trans Date": "09/17/2018",
+    "Description": "IOF - COMPRA NO EXTERIOR",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "",
+    "Fonte": "cartao",
+    "Amount": -30.012963000000003,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/04/2017",
-    "Post Date": "06/04/2017",
-    "Description": "SQ *CREOLA BISTRO",
-    "Amount": -32.77
+    "Trans Date": "09/14/2018",
+    "Description": "MTA MVM*H001-8 AV",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "NY",
+    "Fonte": "cartao",
+    "Amount": -30.270585,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "06/01/2017",
-    "Post Date": "06/02/2017",
-    "Description": "SANTA RAMEN",
-    "Amount": -15
+    "Trans Date": "09/17/2018",
+    "Description": "IOF - COMPRA NO EXTERIOR",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "",
+    "Fonte": "cartao",
+    "Amount": -1.9321650000000001,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "05/30/2017",
-    "Post Date": "05/31/2017",
-    "Description": "SQ *POKE LAB FISH BAR",
-    "Amount": -11.69
+    "Trans Date": "09/17/2018",
+    "Description": "COMPASS VENDING",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "BC",
+    "Fonte": "cartao",
+    "Amount": -4.1648890000000005,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "05/30/2017",
-    "Post Date": "05/31/2017",
-    "Description": "SQ *TIGER TEA &amp; JUICE",
-    "Amount": -5.17
+    "Trans Date": "09/18/2018",
+    "Description": "IOF - COMPRA NO EXTERIOR",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "",
+    "Fonte": "cartao",
+    "Amount": -0.257622,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "05/30/2017",
-    "Post Date": "05/31/2017",
-    "Description": "SQ *TIGER TEA &amp; JUICE",
-    "Amount": -5.17
+    "Trans Date": "09/17/2018",
+    "Description": "COMPASS VENDING",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "BC",
+    "Fonte": "cartao",
+    "Amount": -26.492129000000002,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "05/30/2017",
-    "Post Date": "05/30/2017",
-    "Description": "GOOGLE *SVCSAPPS_00C23",
-    "Amount": -0.01
+    "Trans Date": "09/18/2018",
+    "Description": "IOF - COMPRA NO EXTERIOR",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "",
+    "Fonte": "cartao",
+    "Amount": -1.6745430000000001,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "05/29/2017",
-    "Post Date": "05/30/2017",
-    "Description": "ICICLES",
-    "Amount": -15
+    "Trans Date": "09/17/2018",
+    "Description": "AJUSTE A DEBITO VAR.CAMBIAL COMPRA EXT",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "",
+    "Fonte": "cartao",
+    "Amount": -9.39,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "05/28/2017",
-    "Post Date": "05/29/2017",
-    "Description": "SQ *BOBA GUYS POTRERO",
-    "Amount": -13.22
+    "Trans Date": "09/25/2018",
+    "Description": "ANUIDADE DIFERENCIADA TIT-",
+    "Parcelado": "PARC",
+    "Parcela": "09/12",
+    "Localizacao": "BR",
+    "Fonte": "cartao",
+    "Amount": -16.83,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "05/28/2017",
-    "Post Date": "05/28/2017",
-    "Description": "SQ *TIGER TEA &amp; JUICE",
-    "Amount": -10.33
+    "Trans Date": "09/25/2018",
+    "Description": "PROTECAO OURO OUT/2018",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "BR",
+    "Fonte": "cartao",
+    "Amount": -3,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "05/27/2017",
-    "Post Date": "05/29/2017",
-    "Description": "Skool Restaurant",
-    "Amount": -84.35
+    "Trans Date": "09/22/2018",
+    "Description": "IOF - SAQUE NO EXTERIOR",
+    "Parcelado": "",
+    "Parcela": "",
+    "Localizacao": "BR",
+    "Fonte": "cartao",
+    "Amount": -4.2937,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "05/27/2017",
-    "Post Date": "05/29/2017",
-    "Description": "SFMTA MOSCONE GARAGE",
-    "Amount": -7
+    "Trans Date": "06/06/2018",
+    "Description": "BFP CALCADOS",
+    "Parcelado": "PARC",
+    "Parcela": "04/04",
+    "Localizacao": "BR",
+    "Fonte": "cartao",
+    "Amount": -83.7,
+    "": ""
   },
   {
-    "Type": "Sale",
-    "Trans Date": "05/26/2017",
-    "Post Date": "05/29/2017",
-    "Description": "FIREHOUSE NO 1",
-    "Amount": -57.26
-  },
-  {
-    "Type": "Sale",
-    "Trans Date": "05/24/2017",
-    "Post Date": "05/25/2017",
-    "Description": "SQ *TIGER TEA &amp; JUICE",
-    "Amount": -4.62
-  },
-  {
-    "Type": "Sale",
-    "Trans Date": "05/23/2017",
-    "Post Date": "05/23/2017",
-    "Description": "AIRBNB",
-    "Amount": -500
-  },
-  {
-    "Type": "Sale",
-    "Trans Date": "05/23/2017",
-    "Post Date": "05/23/2017",
-    "Description": "AIRBNB",
-    "Amount": -367
-  },
-  {
-    "Type": "Sale",
-    "Trans Date": "05/23/2017",
-    "Post Date": "05/25/2017",
-    "Description": "WETZEL'S PRETZELS",
-    "Amount": -6.2
-  },
-  {
-    "Type": "Sale",
-    "Trans Date": "05/23/2017",
-    "Post Date": "05/23/2017",
-    "Description": "SNOCREAM",
-    "Amount": -6.56
-  },
-  {
-    "Type": "Sale",
-    "Trans Date": "05/22/2017",
-    "Post Date": "05/24/2017",
-    "Description": "AMTRAK .COM 1420627110785",
-    "Amount": -84
-  },
-  {
-    "Type": "Sale",
-    "Trans Date": "05/21/2017",
-    "Post Date": "05/23/2017",
-    "Description": "FARMSTEAD",
-    "Amount": -38.28
-  },
-  {
-    "Type": "Sale",
-    "Trans Date": "05/20/2017",
-    "Post Date": "05/21/2017",
-    "Description": "SQ *MISSION HEIRLOOM",
-    "Amount": -49.71
-  },
-  {
-    "Type": "Sale",
-    "Trans Date": "05/20/2017",
-    "Post Date": "05/21/2017",
-    "Description": "MASSE'S PASTRIES",
-    "Amount": -16.5
-  },
-  {
-    "Type": "Sale",
-    "Trans Date": "05/20/2017",
-    "Post Date": "05/21/2017",
-    "Description": "SQ *CREATIVE NAIL SPA",
-    "Amount": -22
-  },
-  {
-    "Type": "Sale",
-    "Trans Date": "05/19/2017",
-    "Post Date": "05/21/2017",
-    "Description": "SQ *TIGER TEA &amp; JUICE",
-    "Amount": -4.62
+    "Trans Date": "08/21/2018",
+    "Description": "AllianzGASV",
+    "Parcelado": "PARC",
+    "Parcela": "02/06",
+    "Localizacao": "BR",
+    "Fonte": "cartao",
+    "Amount": -46.41,
+    "": ""
   }
 ]
