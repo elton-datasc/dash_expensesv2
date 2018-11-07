@@ -1,4 +1,4 @@
-Trans Date;Description;Parcelado;Parcela;Localizacao;Fonte;Amount;
+Trans Date;Description;Parcelado;Parcela;Localizacao;Fonte;Amount
 09/25/2018;DEBITOS PAGOS EM USS NO PERIODO;;;;cartao;71.618916
 09/25/2018;DEBITOS NO EXTERIOR CONVERT P/ R$;;;;cartao;-71.618916
 09/10/2018;PGTO DEBITO CONTA 1617 000005071  200211;;;;cartao;3493.13
@@ -37,5 +37,5 @@ Trans Date;Description;Parcelado;Parcela;Localizacao;Fonte;Amount;
 09/25/2018;ANUIDADE DIFERENCIADA TIT-;PARC;09/12;BR;cartao;-16.83
 09/25/2018;PROTECAO OURO OUT/2018;;;BR;cartao;-3.0
 09/22/2018;IOF - SAQUE NO EXTERIOR;;;BR;cartao;-4.2937
-06/06/2018;BFP CALCADOS;PARC;04/04;BR;cartao;-83.7
-08/21/2018;AllianzGASV;PARC;02/06;BR;cartao;-46.41
+09/30/2018;BFP CALCADOS;PARC;04/04;BR;cartao;-83.7
+09/30/2018;AllianzGASV;PARC;02/06;BR;cartao;-46.41
