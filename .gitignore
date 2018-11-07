@@ -9,6 +9,7 @@
 # testing
 /coverage
 processamento/programa/test_page.html
+processamento/.ipynb_checkpoints/
 
 # production
 /build
