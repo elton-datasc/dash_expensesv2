@@ -1,15 +1,16 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # bank files
-/processamento/dados
+dados/cartao/**.ofx
+datos/conta/**.ofx
 
 # dependencies
-/node_modules
+frontend/node_modules
 
-# testing
-/coverage
-processamento/programa/test_page.html
-processamento/.ipynb_checkpoints/
+# processamento
+processamento/.ipynb_checkpoints
+processamento/*respostas*
+processamento/test.json
 
 # production
 /build
@@ -20,7 +21,7 @@ processamento/.ipynb_checkpoints/
 .env.development.local
 .env.test.local
 .env.production.local
-
+**/__pycache__
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
