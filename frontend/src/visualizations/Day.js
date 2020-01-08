@@ -29,6 +29,7 @@ class Day extends Component {
   }
 
   componentDidMount() {
+    if (!this.props.selectedWeek) return;
     this.container = d3.select(this.refs.container);
     this.calculateData();
     this.renderBacks();
@@ -80,6 +81,8 @@ class Day extends Component {
   }
 
   calculateDayPosition(date, shouldSelectedWeekCurve) {
+    if (!this.props.selectedWeek) return;
+
     var dayOfWeek = date.getDay();
     var week = d3.timeWeek.floor(date);
     var x = xScale(dayOfWeek);

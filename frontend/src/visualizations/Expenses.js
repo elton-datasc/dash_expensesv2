@@ -115,6 +115,8 @@ class App extends Component {
     var x = xScale(dayOfWeek);
     var y = yScale(week) + height + 2 * dayHeight;
 
+    // console.log(this.props.selectedWeek);
+
     if (shouldSelectedWeekCurve &&
       week.getTime() === this.props.selectedWeek.getTime()) {
       var offset = Math.abs(3 - dayOfWeek);

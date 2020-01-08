@@ -7,7 +7,7 @@ import deleteIconSrc from '../images/delete.svg';
 var height = 600;
 var topPadding = 150;
 var radius = 55;
-var white = '#fff8fa';
+// var white = '#fff8fa';
 var deleteIconY = 160;
 var deleteIconRadius = 24;
 
@@ -41,6 +41,7 @@ class App extends Component {
 
   componentDidMount() {
     this.container = d3.select(this.refs.container);
+    // console.log(`container`, this.container)
     // create delete icon
     this.deleteIcon = this.container.append('image')
       .attr('x', this.props.width / 2 - deleteIconRadius)
@@ -51,6 +52,9 @@ class App extends Component {
       .attr('fill', this.props.colors.black)
       .style('display', 'none');
 
+    if(!this.container){
+      return null
+    }
     this.calculateData();
     this.renderLinks();
     this.renderCircles();

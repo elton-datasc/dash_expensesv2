@@ -6,7 +6,7 @@ import Expenses from './visualizations/Expenses';
 import Day from './visualizations/Day';
 import Categories from './visualizations/Categories';
 
-import expensesData from './data/expenses.json';
+// import expensesData from './data/expenses.json';
 import locale from './data/pt-BR.json';
 
 var width = 750;
@@ -42,45 +42,54 @@ class App extends Component {
     this.deleteCategory = this.deleteCategory.bind(this);
   }
 
+
+  async getData() {
+      // process data
+      var timeFormat = d3.timeFormat('%d/%m/%y');
+      var data = await d3.json('http://localhost:5000/2019/11');
+      // console.log(data);
+      var expenses = _.chain(data)
+        .filter(d => d.Amount < 0)
+        .map((d, i) => {
+          return {
+            id: i,
+            amount: -d.Amount,
+            name: `${d.Description} (${-d.Amount}) ${timeFormat(new Date(d['Trans Date']))}`,
+            date: new Date(d['Trans Date']),
+            categories: 0,
+          }
+        }).value();
+  
+      // default selected week will be the most recent week
+      var selectedWeek = d3.max(expenses, exp => d3.timeWeek.floor(exp.date));
+      // console.log(expenses, selectedWeek)
+      
+      return [expenses, selectedWeek];
+  }
+
+  async inicializar(){
+    var retorno = await this.getData();
+    var expenses = retorno[0];
+    var selectedWeek = retorno[1];
+    this.setState({expenses, selectedWeek});
+    // console.log(expenses, selectedWeek)
+  }
+
   componentWillMount() {
-    // process data
-    var timeFormat = d3.timeFormat('%d/%m/%y');
-    d3.json('http://localhost:5000/2019/12')
-      .then((data) => {
-        console.log(data);
-        var expenses = _.chain(data)
-          .filter(d => d.Amount < 0)
-          .map((d, i) => {
-            return {
-              id: i,
-              amount: -d.Amount,
-              name: `${d.Description} (${-d.Amount}) ${timeFormat(new Date(d['Trans Date']))}`,
-              date: new Date(d['Trans Date']),
-              // amount: -d.Valor,
-              // name: d['Histórico'],
-              // date: new Date(d.Data),
-              categories: 0,
-            }
-          }).value();
-    
-        // default selected week will be the most recent week
-        var selectedWeek = d3.max(expenses, exp => d3.timeWeek.floor(exp.date));
-    
-        this.setState({expenses, selectedWeek});
-
-      })
-
+    this.inicializar()
   }
 
   prevWeek() {
     // todo: error handling
     var selectedWeek = d3.timeWeek.offset(this.state.selectedWeek, -1);
+    console.log(selectedWeek);
     this.setState({selectedWeek});
   }
-
+  
   nextWeek() {
     // todo: error handling
     var selectedWeek = d3.timeWeek.offset(this.state.selectedWeek, 1);
+    console.log(selectedWeek);
     this.setState({selectedWeek});
   }
 
@@ -144,6 +153,9 @@ class App extends Component {
   }
 
   render() {
+    if(!this.state.expenses || !this.state.selectedWeek){
+      return null
+    }
     d3.timeFormatDefaultLocale(locale);
     var selectedWeek = d3.timeFormat('%d de %B, %Y')(this.state.selectedWeek);
     var style = {

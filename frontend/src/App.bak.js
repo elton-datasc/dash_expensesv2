@@ -60,8 +60,12 @@ class App extends Component {
         }
       }).value();
 
+    console.log(expenses);
     // default selected week will be the most recent week
     var selectedWeek = d3.max(expenses, exp => d3.timeWeek.floor(exp.date));
+    
+    console.log(selectedWeek);
+
 
     this.setState({expenses, selectedWeek});
   }
