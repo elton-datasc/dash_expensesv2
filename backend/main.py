@@ -25,7 +25,7 @@ def separa_mes(df, month, year):
     end = datetime(year, month, monthrange(year, month)[1])
     return df[df.date.ge(begin) & df.date.le(end)].copy()
 
-df = pd.read_json("../processamento/test.json")
+df = pd.read_json("../dados/tudo.json")
 dateformat = '%Y/%m/%d'
 df['date'] = pd.to_datetime(df['date'], format=dateformat)
 df['referencia'] = pd.to_datetime(df['referencia'], format=dateformat)

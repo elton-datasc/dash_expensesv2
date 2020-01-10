@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+#calendar {
+  margin: 20px;
+}
+.month {
+  margin-right: 8px;
+}
+.month-name {
+  font-size: 85%;
+  fill: #777;
+  font-family: Arial, Helvetica;
+}
+.day.hover {
+  stroke: #6d6E70;
+  stroke-width: 2;
+}
+.day.focus {
+  stroke: #ffff33;
+  stroke-width: 2;
+}
+</style>
+<body>
+
+<div id="calendar"></div>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script>
+
+function drawCalendar(myData) {
+
+  var calendarRows = function(month) {
+    var m = d3.timeMonth.floor(month);
+    return d3.timeWeeks(d3.timeWeek.floor(m), d3.timeMonth.offset(m,1)).length;
+  }
+
+  var minDate = d3.min(myData, function(d) { return new Date(d.day); });
+  var maxDate = d3.max(myData, function(d) { return new Date(d.day); });
+
+  var cellMargin = 2,
+      cellSize = 20;
+
+  var locale = d3.timeFormatLocale({
+    "decimal": ",",
+    "thousands": ".",
+    "grouping": [3],
+    "currency": ["R$", ""],
+    "dateTime": "%d/%m/%Y %H:%M:%S",
+    "date": "%d/%m/%Y",
+    "time": "%H:%M:%S",
+    "periods": ["AM", "PM"],
+    "days": ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"],
+    "shortDays": ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"],
+    "months": ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+    "shortMonths": ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
+  });
+
+  var day = locale.format("%w"),
+      week = locale.format("%U"),
+      format = locale.format("%Y-%m-%d"),
+    //   titleFormat = locale.format("%a, %d-%b"),
+      titleFormat = locale.format("%a, %d/%m/%Y"),
+      monthName = locale.format("%B"),
+      months= d3.timeMonth.range(d3.timeMonth.floor(minDate), maxDate);
+
+  function shift(number) {
+      var result = Number(number) + 1;
+      if (result == 7) result = 0;
+      return result;
+  }
+
+  var svg = d3.select("#calendar").selectAll("svg")
+    .data(months)
+    .enter().append("svg")
+      .attr("class", "month")
+      .attr("width", (cellSize * 7) + (cellMargin * 8) )
+      .attr("height", function(d) {
+        var rows = calendarRows(d);
+        return (cellSize * rows) + (cellMargin * (rows + 1)) + 20; // the 20 is for the month labels
+      })
+    .append("g")
+
+  svg.append("text")
+    .attr("class", "month-name")
+    .attr("x", ((cellSize * 7) + (cellMargin * 8)) / 2 )
+    .attr("y", 15)
+    .attr("text-anchor", "middle")
+    .text(function(d) { return monthName(d); })
+
+  var rect = svg.selectAll("rect.day")
+    .data(function(d, i) {
+      return d3.timeDays(d, new Date(d.getFullYear(), d.getMonth()+1, 1));
+    })
+    .enter().append("rect")
+      .attr("class", "day")
+      .attr("width", cellSize)
+      .attr("height", cellSize)
+      .attr("rx", 3).attr("ry", 3) // rounded corners
+      .attr("fill", '#eaeaea') // default light grey fill
+      .attr("x", function(d) {
+        // var dia = shift(day(d));
+        var dia = day(d);
+        var x = (dia * cellSize) + (dia* cellMargin) + cellMargin;
+        // var x = (((day(d) + 1) % 7) * cellSize) + (((day(d) + 1) % 7) * cellMargin) + cellMargin; 
+        return x;
+      })
+      .attr("y", function(d) {
+          y = ((week(d) - week(new Date(d.getFullYear(),d.getMonth(),1))) * cellSize) +
+          ((week(d) - week(new Date(d.getFullYear(),d.getMonth(),1))) * cellMargin) +
+          cellMargin + 20;
+          return y; 
+       })
+      .on("mouseover", function(d) {
+        d3.select(this).classed('hover', true);
+      })
+      .on("mouseout", function(d) {
+        d3.select(this).classed('hover', false);
+      })
+      .datum(format);
+
+  rect.append("title")
+    .text(function(d) { return titleFormat(new Date(d)); });
+
+  var lookup = d3.nest()
+    .key(function(d) { return d.day; })
+    .rollup(function(leaves) {
+      return d3.sum(leaves, function(d){ return parseInt(d.count); });
+    })
+    .object(myData);
+
+  var scale = d3.scaleLinear()
+    .domain(d3.extent(myData, function(d) { return parseInt(d.count); }))
+    .range([0.4,1]); // the interpolate used for color expects a number in the range [0,1] but i don't want the lightest part of the color scheme
+
+  rect.filter(function(d) { return d in lookup; })
+    .style("fill", function(d) { return d3.interpolatePuBu(scale(lookup[d])); })
+    .classed("clickable", true)
+    .on("click", function(d){
+      if(d3.select(this).classed('focus')){
+        d3.select(this).classed('focus', false);
+      } else {
+        d3.select(this).classed('focus', true)
+      }
+      // doSomething();
+    })
+    .select("title")
+      .text(function(d) { return titleFormat(new Date(d)) + ":  " + lookup[d]; });
+
+}
+
+d3.csv("dates.csv", function(response) {
+  drawCalendar(response);
+})
+
+</script>
+</body>
