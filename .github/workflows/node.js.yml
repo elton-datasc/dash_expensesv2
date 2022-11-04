@@ -20,7 +20,7 @@ jobs:
           node-version: '16.x'
 
       - name: Installing my packages
-        run: cd frontends/dashboard && npm npm install
+        run: cd frontends/dashboard && npm install
 
       - name: Build my App
         run:  npm run build && npm run export && touch ./out/.nojekyll
