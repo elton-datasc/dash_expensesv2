@@ -20,10 +20,10 @@ jobs:
           node-version: '16.x'
 
       - name: Installing my packages
-        run: npm ci
+        run: cd frontends/dashboard && npm ci
 
       - name: Build my App
-        run: cd frontends/dashboard && npm run build && npm run export && touch ./out/.nojekyll
+        run:  npm run build && npm run export && touch ./out/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.1
