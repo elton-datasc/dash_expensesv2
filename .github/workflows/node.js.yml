@@ -23,7 +23,7 @@ jobs:
         run: cd frontends/dashboard && npm install
 
       - name: Build my App
-        run:  npm run build && npm run export && touch ./out/.nojekyll
+        run:  cd frontends/dashboard && npm run build && npm run export && touch ../../out/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.1
